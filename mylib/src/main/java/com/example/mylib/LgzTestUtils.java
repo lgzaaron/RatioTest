@@ -2,7 +2,6 @@ package com.example.mylib;
 
 import android.util.Log;
 
-import static android.content.ContentValues.TAG;
 
 public class LgzTestUtils {
     private LgzTestUtils() {
@@ -19,7 +18,7 @@ public class LgzTestUtils {
         return util;
     }
 
-    public void  getTime(){
-        Log.e(TAG, "getTime:"+System.currentTimeMillis());
+    public long  getTime(){
+        return  System.currentTimeMillis();
     }
 }
